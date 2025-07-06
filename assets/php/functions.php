@@ -6,7 +6,7 @@
             'success' => ['class' => 'alert-success', 'icon' => 'fa-circle-check'],
             'error' => ['class' => 'alert-danger', 'icon' => 'fa-circle-xmark'],
             'warning' => ['class' => 'alert-warning', 'icon' => 'fa-triangle-exclamation'],
-            'info' => ['class' => 'alert-info', 'icon' => 'fa-circle-info']
+            'info' => ['class' => 'alert-primary', 'icon' => 'fa-circle-info']
         ];
 
         // Loop through each alert type and check if the corresponding global variable is set

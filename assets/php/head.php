@@ -1,5 +1,9 @@
 <!-- Session Modification -->
-<?php ini_set('session.gc_maxlifetime', 86400 * 30); ?>
+<?php
+    $lifeTime = 86400 * 30;
+    ini_set('session.gc_maxlifetime', $lifeTime);
+    session_set_cookie_params($lifeTime);
+?>
 <!-- Sessions Starting -->
 <?php session_start() ?>
 <!-- Required Meta -->

@@ -5,7 +5,7 @@
             include "assets/php/dbconfig.php";
             include "assets/php/head.php";
             // Check authentication
-            if (isset($_SESSION['user_id'])) {
+            if (isset($_SESSION['auth_id'])) {
                 header("Location: index.php");
                 exit();
             }

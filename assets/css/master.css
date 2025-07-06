@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "SF Pro Display";
+    font-family: "SF Pro";
     src: url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 * {
-    font-family: "SF Pro Display", sans-serif;
+    font-family: "SF Pro", sans-serif;
     box-sizing: border-box;
     transition: 0.3s !important;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .input-group-text {
-    border-radius: 25px 0 0 25px;
+    border-radius: 35px 0 0 35px;
 }
 
 .login-view {
@@ -173,12 +173,138 @@ body {
 }
 
 /* Home */
+.navbar {
+    margin-top: 20px;
+    border-radius: 35px;
+    padding: 0 !important;
+    margin-bottom: 50px;
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 1.5px 4px rgba(24, 135, 84, 0.10);
+}
+
+.navbar.sticky-top {
+    transform: translateY(10px);
+}
+
 .navbar .navbar-brand {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
+}
+
+.navbar .navbar-brand span {
+    transform: translateY(18px) !important;
 }
 
 .navbar .navbar-brand img {
     height: 50px;
     margin-right: 5px;
+    margin-top: -7px;
+}
+
+.navbar .navbar-nav {
+    width: 60%;
+}
+
+.navbar .btn i {
+    margin-right: 10px;
+}
+
+.navbar .navbar-nav form {
+    width: 100% !important;
+}
+
+.navbar .navbar-nav form input {
+    text-align: center;
+}
+
+.table-box {
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 25px !important;
+    padding: 15px;
+}
+
+.table {
+    background-color: var(--bs-dark);
+}
+
+.table tr {
+    cursor: pointer;
+}
+
+.table tr:active {
+    background-color: #000 !important;
+}
+
+.table th img {
+    border-radius: 25px;
+}
+
+.table tr td a:hover > img {
+    transform: rotate(135deg);
+}
+
+/* Password Details */
+.details h1 {
+    font-size: 20px;
+}
+
+.details .row .col .card {
+    border-radius: 35px !important;
+    overflow: hidden;
+    max-width: 400px;
+    min-width: 350px;
+    margin-bottom: 15px;
+}
+
+.details .row .col .card #password {
+    user-select: none !important;
+}
+
+.details .row .col .card .card-header {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.details .row .col .card .card-header .d-flex i {
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 35px;
+    scale: 0.8;
+}
+
+.details .row .col .card .card-header .d-flex #login {
+    margin-top: 14px;
+    scale: 1.1;
+}
+
+.details .row .col .card .clipboard-add {
+    padding: 8px 15px 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.details .row .col .card .clipboard-add:hover {
+    background-color: var(--bs-dark-bg-subtle);
+}
+
+.details .row .col .card .box > .d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details .row .col .card .card-header > .d-flex {
+    gap: 10px;
+}
+
+.details .row .col .card .card-text .box:last-child {
+    margin-bottom: 20px;
+}
+
+.details .row .col .card .btn i {
+    margin-right: 10px;
 }
